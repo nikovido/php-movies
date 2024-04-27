@@ -1,0 +1,83 @@
+
+/*configuracion de variables*/
+:root{
+    --main-color: #f3f3f3;
+    --secondary-color: #161516;
+    --third-color: yellow; 
+    --third-color-t: #840404bc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+header{
+    height: 15vh;
+    nav{
+        height:100%;
+    }
+}
+footer{
+    height: 15vh;
+    background-color: var(--third-color);
+    color: var(--main-color);
+}
+@media (max-width: 575px){
+    header{
+        height: initial;
+        nav{
+            height: initial;
+        }
+    }
+    footer{
+        height: initial;
+        margin-bottom: 0;
+        nav{
+            height: initial;
+        }
+    }
+}
+
+.bgYellow{
+  background-color: var(--third-color);
+}
+
+/* estilos del home */
+
+.hero {
+    height: 85vh;
+    background:linear-gradient(to bottom, #000000a3, #000000a3),url("../assets/img/banner-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    .contenedorTitulos{
+        text-align: center;
+        /*efecto blur a un contenedor*/
+        backdrop-filter: blur(8px);
+        width: 80%;
+        margin:0 auto;
+        border-radius: 5px;
+        gap: 20px;
+    }
+}
+
+
+
+/*estilos de detalle*/
+
+.altoIframe{
+    height: 350px;
+}
+.sinLista{
+    list-style: none;
+}

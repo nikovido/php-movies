@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | CAC-MOVIES</title>
+    <!--aos animaciones-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos_bootstrap.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="container-fluid sticky-top bgYellow m-0 p-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand fs-3" href="../index.html">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <span>PHP-Movies</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse bgYellow p-2" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link active fs-4" aria-current="page" href="../index#tendencias">Tendencias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fs-4" href="./registrarse.html">Registrarse</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active fs-4" href="./iniciosesion.html">Iniciar Sesión</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+      
+    </header>
+    <main id="main">
+        <section class="hero container-fluid">
+            <div class="contenedorTitulos mt-5">
+                <h1>Películas y series ilimitadas <br> en un solo lugar</h1>
+                <h2>Disfruta donde quieras. <br> Cancela en cualquier momento.</h2>
+                <a href="./pages/registrarse.html" role="button" class="btn btn-outline-light btn-lg mb-4 mt-4">Registrate</a>
+            </div>
+        </section>
+        <section class="container-xl d-flex flex-column mt-5 mb-5 justify-content-center align-items-center align-middle">
+            <h2 >¿Qué estas buscando para ver?</h2>
+            <form>
+                <input class="md-auto" type="text" placeholder="Buscar..." id="buscar" name="buscar" >
+                <button  type="submit" a href="" class="btn btn-outline-secondary btn-md mb-4 mt-4">Buscar</button>
+            </form>
+        </section>
+        <hr>
+        <section class="peliculasTendencias container d-flex flex-column justify-content-center align-items-center align-middle gap-3">
+                <div class="">
+                    <h2>Las tendencias de hoy</h2>
+                </div>
+            <div class="row row-cols-3 m-0 b-0">
+                    <div class="col"> 
+                        <a href="./pages/detalle.html"><img class="img-fluid" src="./assets/img/peli_1.jpg" alt="The Beekeeper" loading="lazy"></a>
+                    </div>
+                    <div class="col">
+                        <a href="./pages/detalle.html"><img class="img-fluid" src="./assets/img/peli_2.jpg" alt="Badland Hunters" loading="lazy"></a>
+                    </div>
+                    <div class="col">
+                        <a href="./pages/detalle.html"><img class="img-fluid" src="./assets/img/peli_3.jpg" alt="The Marvels" loading="lazy"></a>
+                    </div>
+                    <div class="col">
+                        <a href="./pages/detalle.html"><img class="img-fluid" src="./assets/img/peli_4.jpg" alt="Wonka" loading="lazy"></a>
+                    </div>
+                    <div class="col">
+                        <a href="./pages/detalle.html"><img class="img-fluid" src="./assets/img/peli_5.jpg" alt="Aquaman and the Lost Kingdom" loading="lazy"></a>
+                    </div>
+                    <div class="col">
+                        <a href="./pages/detalle.html"><img class="img-fluid" src="./assets/img/peli_6.jpg" alt="Migration" loading="lazy"></a>
+                    </div>
+                    <div class="col">
+                        <a href="./pages/detalle.html"><img class="img-fluid" src="./assets/img/peli_7.jpg" alt="Sixty Minutes" loading="lazy"></a>
+                    </div>
+                    <div class="col">
+                        <a href="./pages/detalle.html"><img class="img-fluid" src="./assets/img/peli_8.jpg" alt="Wish" loading="lazy"></a>
+                    </div>
+                </div>
+                <div>
+                    <button  class="btn btn-light btn-lg" >Anterior</button>  
+                    <button class="btn btn-light btn-lg" >Siguiente</button>
+                </div>
+            </section>
+        <hr>
+        <section class="peliculasAclamadas container d-flex flex-column justify-content-center align-items-center align-middle" >
+            <div>
+            <h2>Las más aclamadas</h2>
+            </div>
+            <div id="sliderAclamadas" class="galeriaAclamadas carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#sliderAclamadas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#sliderAclamadas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#sliderAclamadas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                    <div class="carousel-item active">
+                        <img  src="./assets/img/aclamada_1.jpg" alt="aclamada_1" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/aclamada_2.jpg" alt="aclamada_2" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/aclamada_3.jpg" alt="aclamada_3" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/aclamada_4.jpg" alt="aclamada_4" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/aclamada_5.jpg" alt="aclamada_5" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/aclamada_6.jpg" alt="aclamada_6" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/aclamada_7.jpg" alt="aclamada_7" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/aclamada_8.jpg" alt="aclamada_8" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/aclamada_9.jpg" alt="aclamada_9" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/aclamada_10.jpg" alt="aclamada_10" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/aclamada_11.jpg" alt="aclamada_11" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./assets/img/aclamada_12.jpg" alt="aclamada_12" loading="lazy">
+                    </div>    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#sliderAclamadas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#sliderAclamadas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>           
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid bgYellow">
+        <nav class="bgYellow mb-0 b-0">
+            <ul class="d-flex flex-column flex-lg-row sinLista gap-3 justify-content-center align-items-center align-middle mt-4">
+                <li class="listaItem"><a class="text-dark fs-4 text-decoration-none" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="text-dark fs-4 text-decoration-none" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="text-dark fs-4 text-decoration-none" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="text-dark fs-4 text-decoration-none administradorPeliculas" href="">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+        <a href="#main" class="position-fixed sticky-bottom bottom-0 end-0">
+            <img src="../assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
+    </footer>
+   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+   <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
