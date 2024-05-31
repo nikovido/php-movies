@@ -15,6 +15,9 @@ body{
     font-family: 'Nunito', sans-serif;
     background-color: var(--secondary-color);
     color: var(--main-color);
+    hr{
+        color: var(--third-color);
+    }
 }
 header{
     height: 15vh;
@@ -23,9 +26,10 @@ header{
     }
 }
 footer{
-    height: 15vh;
-    background-color: var(--third-color);
-    color: var(--main-color);
+    height: 35vh;
+    nav{
+        height: 100%;
+    }
 }
 @media (max-width: 575px){
     header{
@@ -35,13 +39,13 @@ footer{
         }
     }
     footer{
-        height: initial;
-        margin-bottom: 0;
+        height: 35vh;
         nav{
             height: initial;
         }
     }
 }
+
 
 .bgYellow{
   background-color: var(--third-color);
@@ -70,14 +74,19 @@ footer{
         gap: 20px;
     }
 }
-
-
-
 /*estilos de detalle*/
-
 .altoIframe{
     height: 350px;
 }
 .sinLista{
     list-style: none;
 }
+/* estilos registrarse */
+.bodyRegistrarse {
+    height: 90vh;
+}
+
+.seccionInicio {
+    height: 85vh;
+}
+
