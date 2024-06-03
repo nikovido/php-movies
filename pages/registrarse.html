@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     </head>
-<body>
+<body class="bodyRegistrarse">
     <header class="container-fluid sticky-top bgYellow m-0 p-0">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -39,31 +39,31 @@
             </div>
         </nav>
     </header>
-    <main id="main" class="main">
-        <section data-aos="zoom-in" data-aos-duration="1000" class="bodyRegistrarse formulario container d-flex flex-column justify-content-center align-items-center">
-            <form class="g-5" action="" method="get" id="form-registro">
-                <h2 class="tituloRegistrarse">Registro</h2>
-                <div>
+    <main id="main" >
+        <section data-aos="zoom-in" data-aos-duration="1000" class="container d-flex flex-column formulario justify-content-center align-items-center align-middle">
+            <form class="contenedorFormulario justify-content-center align-items-center align-middle g-3" action="" method="get" id="form-registro">
+                <h2 class="tituloRegistrarse mt-3">Registro</h2>
+                <div class="mb-2">
                     <input type="text" placeholder="Nombre"  id="nombre" name="nombre">
-                    <div id="error-nombre" class="error-text"></div>
+                    <div id="error-nombre" class="error-text text-danger"></div>
                 </div>
-                <div>
+                <div class="mb-2">
                     <input type="text" placeholder="Apellido"  id="apellido" name="apellido">
-                    <div id="error-apellido" class="error-text"></div>
+                    <div id="error-apellido" class="error-text text-danger"></div>
                 </div>
-                <div>
+                <div class="mb-2">
                     <input type="email" placeholder="Email"  id="email" name="email">
-                    <div id="error-email" class="error-text"></div>
+                    <div id="error-email" class="error-text text-danger"></div>
                 </div>
-                <div>
+                <div class="mb-2">
                     <input type="password" placeholder="Contraseña"  id="password" name="password">
-                    <div id="error-password" class="error-text"></div>
+                    <div id="error-password" class="error-text text-danger"></div>
                 </div>
-                <div>
+                <div class="mb-2">
                     <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)"  id="fechaNacimiento" name="fechaNacimiento">
-                    <div id="error-fechaNac" class="error-text"></div>
+                    <div id="error-fechaNac" class="error-text text-danger"></div>
                 </div>
-                <div>
+                <div class="mb-2">
                     <select name="pais" id="pais">
                         <option value="">País</option>
                         <option value="AR">Argentina</option>
@@ -77,18 +77,18 @@
                         <option value="UY">Uruguay</option>
                         <option value="VE">Venezuela</option>
                     </select>
-                    <div id="error-pais" class="error-text"></div>
+                    <div id="error-pais" class="error-text text-danger"></div>
                 </div>
-                <div class="terminos">
+                <div class="terminos mb-2">
                     <input class="check" type="checkbox" id="terminos">
                     <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
-                    <div id="error-terminos" class="error-text"></div>
+                    <div id="error-terminos" class="error-text text-danger"></div>
                 </div>
-                <div>
-                    <input class="boton" type="submit" value="Registrarse">
+                <div class="mb-2">
+                    <input class="btn btn-outline-secondary btn-md" type="submit" value="Registrarse">
                 </div>
-                <div>
-                    <a class="ayuda" href="#">Necesitas ayuda?</a>
+                <div class="mb-3">
+                    <a class="ayuda fw-bold text-light" href="#">Necesitas ayuda?</a>
                 </div>
             </form>
         </section>

@@ -48,7 +48,7 @@ footer{
 
 
 .bgYellow{
-  background-color: var(--third-color);
+    background-color: var(--third-color);
 }
 
 /* estilos del home */
@@ -83,10 +83,26 @@ footer{
 }
 /* estilos registrarse */
 .bodyRegistrarse {
+        height: 85vh;
+        background:linear-gradient(to bottom, #24242473,#24242473),url("../assets/img/bg-register.jpg");
+        background-size: cover;
+        background-position: center center;
+}
+
+.formulario {
     height: 90vh;
 }
 
 .seccionInicio {
-    height: 85vh;
+    height: 90h;
 }
 
+.contenedorFormulario{
+    text-align: center;
+    /*efecto blur a un contenedor*/
+    background-color: var(--secondary-color);
+    width: 70%;
+    margin: 5px auto;
+    border-radius: 10px;
+    
+}

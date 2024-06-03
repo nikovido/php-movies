@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     </head>
-<body>
+<body class="bodyRegistrarse">
     <header class="container-fluid sticky-top bgYellow m-0 p-0">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -40,23 +40,23 @@
         </nav>
     </header>
     <main id="main" class="main">
-        <section data-aos="zoom-in" data-aos-duration="1000" class="seccionInicio container d-flex flex-column justify-content-center align-items-center">
+        <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse formulario container d-flex flex-column justify-content-center align-items-center">
             <!--pongo get ya que en github pages da error el method post-->
-            <form id="form" action="" method="get">
-                <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
-                <div>
+            <form class="contenedorFormulario g-3" id="form" action="" method="get">
+                <h2 class="tituloRegistrarse mt-3">Iniciar Sesión</h2>
+                <div class="mb-2">
                     <input type="email" placeholder="Email" id="email" name="email">
-                    <div id="error-email" class="error-text"></div>
+                    <div id="error-email" class="error-text text-danger"></div>
                 </div>
-                <div>
+                <div class="mb-2">
                     <input type="password" placeholder="Contraseña" id="password" name="password">
-                    <div id="error-password" class="error-text"></div>
+                    <div id="error-password" class="error-text text-danger"></div>
                 </div>
-                <div>
-                    <input class="boton" type="submit" value="Iniciar Sesión">
+                <div class="mb-2">
+                    <input class="btn btn-outline-secondary btn-md" type="submit" value="Iniciar Sesión">
                 </div>
-                <div>
-                    <a id="ayuda" class="ayuda" href="registrarse.html">Registrarse</a>
+                <div class="mb-3">
+                    <a id="ayuda" class="ayuda fw-bold text-light" href="registrarse.html">Registrarse</a>
                 </div>
             </form>
         </section>
