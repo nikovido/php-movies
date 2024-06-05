@@ -31,6 +31,7 @@ const cargarPeliculasTendencia = async (page = 1) => {
         // creo el ancla
         const ancla = document.createElement('a');
         ancla.href = './pages/detalle.html';
+        ancla.classList.add('text-decoration-none');
         // creo el div pelicula
         const pelicula = document.createElement('div');
         pelicula.classList.add('pelicula');
@@ -41,17 +42,21 @@ const cargarPeliculasTendencia = async (page = 1) => {
         img.classList.add('img-fluid');
         img.classList.add('rounded-3');
         img.classList.add('shadow-lg');
-        img.classList.add('border');
-        img.classList.add('border-white');
-        img.classList.add('border-5');
+        //img.classList.add('border');
+        //img.classList.add('border-secondary');
+        //img.classList.add('border-3');
+        img.classList.add('mh-50');
+        img.classList.add('mw-50');
         img.src = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
         img.alt = movie.title;
         img.loading = 'lazy';
         // creo el div tituloPelicula
         const tituloPelicula = document.createElement('div');
         tituloPelicula.classList.add('tituloPelicula');
+        tituloPelicula.classList.add('text-center');
         // creo el h4
         const titulo = document.createElement('h4');
+        titulo.classList.add('text-light');
         titulo.textContent = movie.title;
         // relaciono los elementos
         ancla.appendChild(pelicula);
@@ -88,21 +93,26 @@ const cargarPeliculasAclamadas = async () => {
         img.classList.add('imgAclamada');
         img.src = `https://image.tmdb.org/t/p/w500/${movie.poster_path}`;
         img.alt = movie.title;
-        img.loading = 'lazy';
         img.classList.add('img-aclamada');
-        img.classList.add('d-block');
-        img.classList.add('w-50');
+        //img.classList.add('d-block');
+        img.classList.add('rounded-3');
+        img.classList.add('w-25');
         img.classList.add('container');
         img.classList.add('d-flex');
+        img.classList.add('border');
+        img.classList.add('border-secondary');
+        img.classList.add('border-3');
+        img.classList.add('p-0');
         img.classList.add('justify-content-center');
         img.classList.add('align-items-center');
         img.classList.add('align-middle');
+        img.loading = 'lazy';
         // creo el control del carrousel
         const controlItem = document.createElement('button');
         controlItem.setAttribute('type', 'button');
         controlItem.setAttribute('data-bs-target', '#sliderAclamadas');
         controlItem.setAttribute('data-bs-slide-to', cont);
-        controlItem.setAttribute('aria-label', 'Slide '+ movie.id);
+        controlItem.setAttribute('aria-label', 'Slide '+ cont);
         // relaciono los elementos
         peliculaItem.appendChild(img);
         aclamadasContainer.appendChild(peliculaItem);
@@ -142,6 +152,7 @@ botonSiguiente.addEventListener('click', () => {
     let currentPage = Number(seccionTendencias.getAttribute('data-page'));
     // Cargar las películas de la página siguiente
     cargarPeliculasTendencia(currentPage + 1);
+    // ir al top
 });
 
 // Ejecutamos las funciones de carga de películas al cargar la página

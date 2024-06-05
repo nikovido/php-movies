@@ -74,6 +74,29 @@ footer{
         gap: 20px;
     }
 }
+.imgTendencia:hover {
+    outline: 2px solid yellow;
+    border-radius: 5px;
+    transition: .1s ease;
+}
+/* buscador  */
+.inputEstilo {
+	font-weight: bold;
+	padding: 5px 10px;
+	outline: none;
+	background: #FFFFFF;
+	color: #000000;
+	border: 3px solid #ffffff;
+	border-radius: 10px;
+}
+.inputEstilo:focus{
+    background-color: yellow;
+    transition: .1s ease;
+}
+.inputEstilo:hover {
+	background-color: yellow;
+    transition: .1s ease;
+}
 /*estilos de detalle*/
 .altoIframe{
     height: 350px;
@@ -83,26 +106,24 @@ footer{
 }
 /* estilos registrarse */
 .bodyRegistrarse {
-        height: 85vh;
+        height: 90vh;
         background:linear-gradient(to bottom, #24242473,#24242473),url("../assets/img/bg-register.jpg");
         background-size: cover;
         background-position: center center;
 }
-
-.formulario {
-    height: 90vh;
-}
-
-.seccionInicio {
-    height: 90h;
-}
-
 .contenedorFormulario{
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     /*efecto blur a un contenedor*/
     background-color: var(--secondary-color);
     width: 70%;
-    margin: 5px auto;
+    margin: 5px;
     border-radius: 10px;
+    
+}
+.seccionInicio {
+    height: 50vh;
     
 }
